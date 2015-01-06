@@ -11,7 +11,7 @@ modified: 2014 Mar 13
 Barista
 =========
 
-![Screenshot](https://github.com/altercation/solarized/raw/master/bar_widget_screenshot.png)
+![alt tag](https://raw.github.com/osu-sig/Bar-Widget/master/bar_widget_screenshot.png)
 
 ## What is it?
 
