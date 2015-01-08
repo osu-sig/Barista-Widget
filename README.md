@@ -11,7 +11,7 @@ modified: 2015 Jan 7
 Barista
 =========
 
-![alt tag](https://raw.github.com/osu-sig/Barista-Widget/master/barista_widget_screenshot.png)
+![alt tag](https://raw.github.com/osu-sig/Barista-Widget/master/screenshot.png)
 
 ## What is it?
 
