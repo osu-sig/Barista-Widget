@@ -1,4 +1,4 @@
-class Dashing.Bar extends Dashing.Widget
+class Dashing.Barista extends Dashing.Widget
 
   # Make the tile when the page loads
   ready: ->

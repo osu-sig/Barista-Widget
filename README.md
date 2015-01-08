@@ -4,14 +4,14 @@ description: An awesome bar graph widget for Dashing
 author: Michael Woffendin
 tags: bar, widget, dashing, graph, bar graph
 created:  2014 Mar 13
-modified: 2014 Mar 13
+modified: 2015 Jan 7
 
 ---
 
 Barista
 =========
 
-![alt tag](https://raw.github.com/osu-sig/Bar-Widget/master/bar_widget_screenshot.png)
+![alt tag](https://raw.github.com/osu-sig/Barista-Widget/master/barista_widget_screenshot.png)
 
 ## What is it?
 
@@ -25,7 +25,7 @@ Flexible! Want one graph per tile? Easy. Want multiple graphs per tile? Still ea
 
 There are two ways to use Barista: comparing values within a series, and comparing a single series value to a maximum. Look at the demo job to get an idea of what data you'll need to send. 
 
-Make sure that the tile has a background-color and font-size set, as Bar uses those when drawing the graphs. You may want to just modify the supplied bar.scss to meet your needs. 
+Make sure that the tile has a background-color and font-size set, as Bar uses those when drawing the graphs. You may want to just modify the supplied barista.scss to meet your needs. 
 
 ## What are the options?
 
