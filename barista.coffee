@@ -8,7 +8,7 @@ class Dashing.Barista extends Dashing.Widget
 
 
 
-  # Make the tile when new data is recieved
+  # Make the tile when new data is received
   onData: (data) ->
     super
     @make_tile(data.series)
@@ -59,7 +59,7 @@ class Dashing.Barista extends Dashing.Widget
 
 
   draw_total: (variables) ->      
-    # Make the total label! (that word looks wrong)
+    # Make the total label!
     total_label_container = variables.node
       .append("svg")
       .attr("class", "total multiple_value")
@@ -122,7 +122,7 @@ class Dashing.Barista extends Dashing.Widget
           
         return g
       )
-  
+
 
 
   # Has these options:
@@ -141,7 +141,7 @@ class Dashing.Barista extends Dashing.Widget
       .enter()
       .append("g")
       .each((value, index) ->
-        percent = parseInt(value.value, 10) / variables.total
+        percent = parseFloat(value.value) / variables.total
         g = d3.select(this)
         # Draw the bars as a percentage of the total
         g.append("rect")
@@ -201,7 +201,7 @@ class Dashing.Barista extends Dashing.Widget
       variables.node.attr("class", classes + " multiple_value")
     
       for value_item in variables.values
-        variables.total += parseInt(value_item.value, 10)
+        variables.total += parseFloat(value_item.value)
     
       if typeof(series_data.hide_total) == 'undefined'
         @draw_total(variables)
@@ -218,7 +218,7 @@ class Dashing.Barista extends Dashing.Widget
       
       variables.node.attr("class", classes + " single_value")
       variables.bar_height = 40 / 22 * variables.font_size
-      variables.total = parseInt(series_data.max_value, 10)
+      variables.total = parseFloat(series_data.max_value)
       variables.square_padding = 0
       variables.square_size = 0
       
@@ -228,7 +228,7 @@ class Dashing.Barista extends Dashing.Widget
       
       @draw_legend(variables, options)
       
-      variables.values[1] = { label: "max_value", value: variables.total - parseInt(variables.values[0].value, 10) }
+      variables.values[1] = { label: "max_value", value: variables.total - parseFloat(variables.values[0].value) }
       variables.colors = ["#FFFFFF", colors[0]]
       
       options = 
